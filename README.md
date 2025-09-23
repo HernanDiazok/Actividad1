@@ -1,39 +1,90 @@
 # SIMULACION DE EVALUACIÓN PARA LA FERIA DE CIENCIAS
-    Este programa va a permitir calcular los puntajes 
+    Este programa permite calcular los puntajes totales de cada equipo en distintas rondas de evaluación, determinar el Mejor Equipo de la Ronda (MER) y generar un ranking final de los equipos.
+
+    Cada equipo recibe puntos según:
+
+    Innovación: +3 puntos por unidad
+
+    Presentación: +1 punto por unidad
+
+    Errores: -1 punto si comete errores
+
+    El programa suma automáticamente los puntajes de todas las rondas y muestra el ranking actualizado después de cada ronda por equipo de forma descendente, así como el ranking final al terminar todas las rondas.
 
 ## Requisitos previos 
     Antes de empezar con el programa, asegúrate de tener instalado lo siguiente:
     Python 3.12.2 o superior (puedes verificar tu versión ejecutando:
     python --version` en la terminal).
+    Jupyter Notebook
+    Visual Studio Code (opcional)
+    No requiere instalar librerías adicionales.
 
-## Instalación
+## Estructura de Archivos
 
-    Sigue estos pasos para configurar y ejecutar el proyecto:
+Para que el programa funcione correctamente, los archivos deben estar organizados de la
+siguiente manera:
 
-1. **Clona este repositorio**:
-    Si aún no tienes el repositorio, clónalo usando:
-    https://github.com/HernanDiazOk/
-    cd python
+├── src/
+│   └── funciones.py      # Contiene las funciones de cálculo
+├── notebooks/
+│   └── main.ipynb         # Ejecuta la simulación y muestra resultados
+└── README.md              # Este archivo
 
-2. **Crea un entorno virtual**:
-    Es recomendable usar un entorno virtual para instalar las dependencias del proyecto. Ejecuta:
-    python -m venv venv
 
-3. **Activa el entorno virtual**:
-    - En Windows:
-        Venv/Script/Activate
-    - En Mac/Linux
-        source venv/bin/activate
+main.ipynb: ejecuta la lógica del programa y muestra los resultados de cada ronda.
 
-4. **Instala las dependencias:** 
-    Una vez activado el entorno virtual, instala las dependencias necesarias ejecutando:
-    pip install -r Requirements.txt
+funciones.py: contiene funciones como calcular_puntos, determinar_mer y mostrar_ranking.
 
-5. **Ejecuta la aplicacion**: 
-    Para poder correr el proyecto, ejecuta el archivo principal
-    python src/Actividad1.py
+## Cómo usar el Programa
+
+Para ver los resultados de la simulación:
+
+Asegurate de que los archivos estén en la estructura correcta (ver sección Estructura de Archivos).
+
+Abrir y ejecutar el Notebook principal:
+
+Abrí notebooks/main.ipynb en un entorno que pueda ejecutar Jupyter (como Jupyter Notebook o JupyterLab).
+
+Esto se realiza a través del CDM - 
+Windows: buscá “CMD”
+Buscas en donde esta guardada la ruta del proyecto:
+(en mi caso)
+C:\Users\HernanDiaz\Desktop\Python
+
+En la terminal escribís:
+
+cd C:\Users\HernanDiaz\Desktop\Python
+Una vez que verificas que estás en la ruta del proyecto, ejecutas
+jupyter lab
+En JupyterLab, navegá a notebooks/main.ipynb y hacé doble clic para abrirlo.
+Ejecutá cada celda del código. Al finalizar, se mostrarán:
+
+La ronda que se está evaluando
+
+El “Mejor Equipo de la Ronda” y su puntaje
+
+Un ranking actualizado con los puntajes acumulados de todos los equipos
+
+Opcional: Ejecutar desde VS Code:
+
+Abrí VS Code y seleccioná File > Open Folder para abrir la carpeta del proyecto.
+
+Abrí notebooks/main.ipynb y ejecutalo usando la extensión de Jupyter de VS Code (ejecutando cada celda).
 
 ## Notas Adicionales 
-    Si necesitas usar Jupyter Notebook para ejecutar el archivo interactico, asegurate de que este instalado con el comando
-    pip install notebook
-    Luego debes abrir el archivo Actividad1.ipynb 
+
+El programa suma automáticamente los puntajes de todas las rondas para cada equipo.
+
+El ranking incluye:
+
+Innovación total
+
+Presentación total
+
+Errores cometidos
+
+Cantidad de MERs
+
+Puntos totales
+
+La simulación permite ver cómo se comportan los equipos en cada ronda y cuál sería el ganador al final de la competencia.

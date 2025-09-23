@@ -10,7 +10,7 @@ def determinar_mer(ronda):
 
 
 def mostrar_ranking(equipos):
-    # Imprime el ranking ordenado por puntos totales.
+    # Imprime el ranking ordenado por puntos totales de cada equipo de forma descendente.
     ranking_ordenado = sorted(equipos.items(), key=lambda item: item[1]['puntos'], reverse=True)
 
     print("\n🏅 Ranking:")
