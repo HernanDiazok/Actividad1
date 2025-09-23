@@ -3,10 +3,10 @@ def calcular_puntos(equipo):
     # +3 puntos por innovación - +1 por presentación - -1 por errores
     return equipo['innovacion'] * 3 + equipo['presentacion'] * 1 - (1 if equipo['errores'] else 0)
 
-
 def determinar_mer(ronda):
     # Devuelve el equipo con mayor puntaje en la ronda.
-    return max(ronda, key=lambda eq: calcular_puntos(ronda[eq]))
+    puntajes = list(map(lambda item: (item[0], calcular_puntos(item[1])), ronda.items()))
+    return max(puntajes, key=lambda x: x[1])[0]  
 
 
 def mostrar_ranking(equipos):
