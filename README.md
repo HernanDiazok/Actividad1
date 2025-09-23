@@ -1,5 +1,7 @@
 # SIMULACION DE EVALUACIÓN PARA LA FERIA DE CIENCIAS
-    Este programa permite calcular los puntajes totales de cada equipo en distintas rondas de evaluación, determinar el Mejor Equipo de la Ronda (MER) y generar un ranking final de los equipos.
+    Este programa permite calcular los puntajes totales de cada equipo en 
+    distintas rondas de evaluación, determinar el Mejor Equipo de la Ronda 
+    (MER) y generar un ranking final de los equipos.
 
     Cada equipo recibe puntos según:
 
@@ -9,7 +11,9 @@
 
     Errores: -1 punto si comete errores
 
-    El programa suma automáticamente los puntajes de todas las rondas y muestra el ranking actualizado después de cada ronda por equipo de forma descendente, así como el ranking final al terminar todas las rondas.
+    El programa suma automáticamente los puntajes de todas las rondas
+    y muestra el ranking actualizado después de cada ronda por equipo 
+    de forma descendente, así como el ranking final al terminar todas las rondas.
 
 ## Requisitos previos 
     Antes de empezar con el programa, asegúrate de tener instalado lo siguiente:
