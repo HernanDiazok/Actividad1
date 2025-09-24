@@ -30,6 +30,7 @@ siguiente manera:
 
 ├── src/
 │   └── funciones.py      # Contiene las funciones de cálculo
+│    └── base_de_datos.py # Contiene la lista de diccionarios con la base de datos
 ├── notebooks/
 │   └── main.ipynb         # Ejecuta la simulación y muestra resultados
 └── README.md              # Este archivo
